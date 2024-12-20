@@ -21,3 +21,40 @@ const target = 5;
 console.log(binarySearch(arr, target));
 
 console.log(process.memoryUsage());
+
+
+function TreeNode(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+}
+
+const root = new TreeNode(10);
+insert(root, 5);
+insert(root, 15);
+insert(root, 3);
+insert(root, 7);
+// Write a function to insert a number into a binary search tree:
+function insert(node, value) {
+    if (value < node.value) {
+        if (node.left === null) {
+            node.left = new TreeNode(value);
+        } else {
+            insert(node.left, value);
+        }
+    } else {
+        if (node.right === null) {
+            node.right = new TreeNode(value);
+        } else {
+            insert(node.right, value);
+        }
+    }
+}
+
+// After insertion, the tree should have the structure:
+//     10
+//    /  \
+//   5    15
+//  / \
+// 3   7
+
