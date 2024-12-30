@@ -62,3 +62,29 @@ function isPalindrome(word){
 function sumTogether(arr1, arr2){
     return arr1.map((num, idx) => num + arr2[idx]);
 }
+
+// Write a function countElements that takes in an array and returns an object a count of each element in the array.
+
+function countElements(arr){
+    return arr.reduce((acc, curr) => {
+        acc[curr] = (acc[curr] || 0) + 1;
+        return acc;
+    }, {});
+}
+
+// Write a function playerHandScore that takes an array of cards and returns the total score of the cards.
+function playerHandScore(hand) {
+    const points = {
+        "K": 4,
+        "Q": 3,
+        "J": 2
+    }
+
+    let totalScore = 0;
+
+    for (let card of hand) {
+        totalScore += points[card];
+    }
+
+    return totalScore;
+}
