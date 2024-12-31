@@ -88,3 +88,8 @@ function playerHandScore(hand) {
 
     return totalScore;
 }
+
+// Write a function that returns the sum of all numbers in an array.
+function sumArray(arr) {
+    return arr.reduce((acc, curr) => acc + curr, 0);
+}
