@@ -38,3 +38,35 @@ function inorderTraversal(node) {
 }
 
 inorderTraversal(root);
+
+// Preorder Traversal
+// Preorder traversal means visiting the root node first, then the left subtree, and finally the right subtree.
+
+// Here is the code to perform a preorder traversal:
+
+function preorderTraversal(node) {
+    if(node === null) {
+        return;
+    }
+    console.log(node.value);
+    preorderTraversal(node.left);
+    preorderTraversal(node.right);
+}
+
+preorderTraversal(root);
+
+// Postorder Traversal
+// Postorder traversal means visiting the left subtree first, then the right subtree, and finally the root node.
+
+// Here is the code to perform a postorder traversal:
+
+function postorderTraversal(node) {
+    if(node === null) {
+        return;
+    }
+    postorderTraversal(node.left);
+    postorderTraversal(node.right);
+    console.log(node.value);
+}
+
+postorderTraversal(root);
