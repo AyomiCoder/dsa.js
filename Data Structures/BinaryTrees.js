@@ -70,3 +70,4 @@ function postorderTraversal(node) {
 }
 
 postorderTraversal(root);
+
