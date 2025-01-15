@@ -34,6 +34,6 @@ function bubbleSort(arr) {
         return lst;
     }
 
-    console.log(anotherSort([8, 3, 1, 6, 7, 4, 29, 5, 2, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]));
+    console.log(anotherSort([8, 3, 1, 6, 7, 4]));
 
     
