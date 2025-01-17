@@ -21,4 +21,4 @@ function selectionSort(arr) {
 
 // Sort the array [8, 3, 1, 6, 7, 4]
 
-console.log(selectionSort([8, 3, 1, 6, 7, 4]));
+console.log(selectionSort([8, 3, 1, 6, 7, 4, 9]));
